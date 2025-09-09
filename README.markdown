@@ -12,11 +12,11 @@ A Chrome extension that analyzes the sentiment of emails viewed in Gmail or manu
 ## Installation
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/your-username/gmail-sentiment-extension.git
+   https://github.com/Priyanshurajpoot/Inbox-Gaurd.git
    ```
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable "Developer mode" (top-right toggle).
-4. Click "Load unpacked" and select the `gmail-sentiment-extension` folder.
+4. Click "Load unpacked" and select the `Inbox-Gaurd` folder.
 5. Pin the extension to your toolbar for easy access.
 
 ## Usage
