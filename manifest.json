@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Sentiment Analyzer (No API)",
+  "version": "1.0",
+  "description": "Analyzes sentiment of current Gmail email or pasted text using local AI. No APIs required.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Analyze Email Sentiment"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
