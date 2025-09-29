@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Guard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="icon">🛡️</div>
+            <h1>Inbox Guard</h1>
+            <p class="tagline">Advanced Email Intelligence</p>
+        </header>
+
+        <!-- Main Action -->
+        <div class="action-section">
+            <button id="scanBtn" class="btn-scan">
+                <span class="btn-icon">🔍</span>
+                <span>Scan Latest Email</span>
+            </button>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p id="loadingMsg">Authenticating with Gmail...</p>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="results hidden">
+            <div class="result-card">
+                <div class="email-header">
+                    <div class="sender-info">
+                        <div class="sender-avatar">📧</div>
+                        <div>
+                            <div class="sender-name" id="sender"></div>
+                            <div class="sender-email" id="email"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="email-subject">
+                    <span class="subject-label">Subject:</span>
+                    <span id="subject" class="subject-value"></span>
+                </div>
+
+                <div class="email-summary">
+                    <div class="summary-label">📝 Summary</div>
+                    <p id="summary" class="summary-text"></p>
+                </div>
+                
+                <div class="analysis">
+                    <div class="badge-row">
+                        <div class="badge category">
+                            <span class="badge-label">Category</span>
+                            <span id="category" class="badge-value"></span>
+                        </div>
+                        <div class="badge sentiment">
+                            <span class="badge-label">Sentiment</span>
+                            <span id="sentiment" class="badge-value"></span>
+                        </div>
+                    </div>
+                    <div class="sentiment-summary">
+                        <div class="sentiment-icon" id="sentimentIcon">💬</div>
+                        <p id="sentimentSummary"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error hidden">
+            <div class="error-icon">⚠️</div>
+            <p id="errorMsg"></p>
+            <button id="retryBtn" class="btn-retry">Try Again</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span class="version">v2.0.0</span>
+            <span id="status" class="status">Ready</span>
+        </footer>
+    </div>
+
+    <script src="sentiment.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

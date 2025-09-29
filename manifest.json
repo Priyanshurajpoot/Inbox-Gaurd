@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Inbox Guard",
+  "version": "2.0.0",
+  "description": "Advanced Gmail inbox scanner with OAuth, sentiment analysis, and email summarization",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "identity"
+  ],
+  
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  
+  "oauth2": {
+    "client_id": "140635573571-hp8ncdg82kd0vsrkq2a7gplsarv4q3ef.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly"
+    ]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Inbox Guard",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
