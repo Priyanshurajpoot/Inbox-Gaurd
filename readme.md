@@ -1,4 +1,6 @@
 # Inbox Guard v2.0 - Advanced Gmail Email Analyzer
+<img width="155" height="155" alt="Inbox Guard" src="https://github.com/user-attachments/assets/5bc7e259-fda6-4e51-bef2-7c2f2dc09277" />
+
 
 A powerful Chrome extension that scans your latest unread Gmail message, fetches the full email body via Gmail API (OAuth), and provides intelligent analysis including:
 
