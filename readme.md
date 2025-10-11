@@ -261,10 +261,6 @@ You can create simple icons or download them. For testing, you can use any 16x16
 ## 📝 Future Enhancements
 
 - [ ] Bulk email scanning
-- [ ] Historical sentiment tracking
-- [ ] Custom category rules
-- [ ] Export analysis results
-- [ ] Multi-language support
 - [ ] AI-powered summarization (GPT integration)
 
 ---
@@ -286,5 +282,6 @@ MIT License - Free to use and modify
 This extension is for educational and personal use. Always review permissions carefully when granting OAuth access to any application.
 
 ---
-
-**Built with ❤️ for better email management**
+AUTHOR 
+- PRIYANSHU RAJPOOT
+....................
